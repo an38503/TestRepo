@@ -624,7 +624,7 @@
   <Blank UId="78" />
   <Access Scope="LiteralConstant" UId="79">
     <Constant UId="80">
-      <ConstantValue UId="82">100.0</ConstantValue>
+      <ConstantValue UId="82">100.55</ConstantValue>
     </Constant>
   </Access>
   <Token Text=";" UId="83" />
