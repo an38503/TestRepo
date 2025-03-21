@@ -1,0 +1,1180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Festo_PtP_Drives_PN_Instance" Datatype="&quot;Festo_PtP_Drives_PN&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="i" Datatype="Int" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FESTO_CMMT_ST</Name>
+      <Namespace />
+      <Number>4</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="ModePos" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="EnableAxis" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="CancelTraversing" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="IntermediateStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Positive" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Negative" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Jog1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Jog2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="AckError" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="ExecuteMode" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="ReleaseBrake" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="TraveltoFixStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Position" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="Velocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="OverV" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="OverAcc" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="OverDec" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="ConfigEPos" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="BaseSpeedValue" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="40">
+      <Constant Name="CMMT-ST~DO_SERVO_1~Siemens_telegram_111__PZD-1,,," />
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisEnabled" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisPosOk" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisSpFixed" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisAckSetpoint" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ClampTorqueReached" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisRef" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisWarn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisError" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="49">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="Lockout" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActVelocity" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActPosition" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActMode" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="EPosZSW1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="EPosZSW2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="55">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActWarn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActFault" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="Error" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="58">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="Status" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="DiagID" />
+      </Symbol>
+    </Access>
+    <Call UId="60">
+      <CallInfo Name="Festo_PtP_Drives_PN" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="61">
+          <Component Name="Festo_PtP_Drives_PN_Instance" />
+        </Instance>
+        <Parameter Name="ModePos" Section="Input" Type="Int" />
+        <Parameter Name="EnableAxis" Section="Input" Type="Bool" />
+        <Parameter Name="CancelTraversing" Section="Input" Type="Bool" />
+        <Parameter Name="IntermediateStop" Section="Input" Type="Bool" />
+        <Parameter Name="Positive" Section="Input" Type="Bool" />
+        <Parameter Name="Negative" Section="Input" Type="Bool" />
+        <Parameter Name="Jog1" Section="Input" Type="Bool" />
+        <Parameter Name="Jog2" Section="Input" Type="Bool" />
+        <Parameter Name="AckError" Section="Input" Type="Bool" />
+        <Parameter Name="ExecuteMode" Section="Input" Type="Bool" />
+        <Parameter Name="ReleaseBrake" Section="Input" Type="Bool" />
+        <Parameter Name="TravelToFixStop" Section="Input" Type="Bool" />
+        <Parameter Name="Position" Section="Input" Type="DInt" />
+        <Parameter Name="Velocity" Section="Input" Type="DInt" />
+        <Parameter Name="OverV" Section="Input" Type="Int" />
+        <Parameter Name="OverAcc" Section="Input" Type="Int" />
+        <Parameter Name="OverDec" Section="Input" Type="Int" />
+        <Parameter Name="ConfigEPos" Section="Input" Type="DWord" />
+        <Parameter Name="BaseSpeedValue" Section="Input" Type="Real" />
+        <Parameter Name="HardwareId" Section="Input" Type="HW_IO" />
+        <Parameter Name="AxisEnabled" Section="Output" Type="Bool" />
+        <Parameter Name="AxisPosOk" Section="Output" Type="Bool" />
+        <Parameter Name="AxisSpFixed" Section="Output" Type="Bool" />
+        <Parameter Name="AxisAckSetpoint" Section="Output" Type="Bool" />
+        <Parameter Name="ClampTorqueReached" Section="Output" Type="Bool" />
+        <Parameter Name="AxisRef" Section="Output" Type="Bool" />
+        <Parameter Name="AxisWarn" Section="Output" Type="Bool" />
+        <Parameter Name="AxisError" Section="Output" Type="Bool" />
+        <Parameter Name="Lockout" Section="Output" Type="Bool" />
+        <Parameter Name="ActVelocity" Section="Output" Type="Real" />
+        <Parameter Name="ActPosition" Section="Output" Type="DInt" />
+        <Parameter Name="ActMode" Section="Output" Type="Int" />
+        <Parameter Name="EPosZSW1" Section="Output" Type="Word" />
+        <Parameter Name="EPosZSW2" Section="Output" Type="Word" />
+        <Parameter Name="ActWarn" Section="Output" Type="Word" />
+        <Parameter Name="ActFault" Section="Output" Type="Word" />
+        <Parameter Name="Error" Section="Output" Type="Bool" />
+        <Parameter Name="Status" Section="Output" Type="Word" />
+        <Parameter Name="DiagID" Section="Output" Type="Word" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="62">
+      <Powerrail />
+      <NameCon UId="60" Name="en" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="21" />
+      <NameCon UId="60" Name="ModePos" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="22" />
+      <NameCon UId="60" Name="EnableAxis" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="23" />
+      <NameCon UId="60" Name="CancelTraversing" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="24" />
+      <NameCon UId="60" Name="IntermediateStop" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="25" />
+      <NameCon UId="60" Name="Positive" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="26" />
+      <NameCon UId="60" Name="Negative" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="27" />
+      <NameCon UId="60" Name="Jog1" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="28" />
+      <NameCon UId="60" Name="Jog2" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="29" />
+      <NameCon UId="60" Name="AckError" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="30" />
+      <NameCon UId="60" Name="ExecuteMode" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="31" />
+      <NameCon UId="60" Name="ReleaseBrake" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="32" />
+      <NameCon UId="60" Name="TravelToFixStop" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="33" />
+      <NameCon UId="60" Name="Position" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="34" />
+      <NameCon UId="60" Name="Velocity" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="35" />
+      <NameCon UId="60" Name="OverV" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="36" />
+      <NameCon UId="60" Name="OverAcc" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="37" />
+      <NameCon UId="60" Name="OverDec" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="38" />
+      <NameCon UId="60" Name="ConfigEPos" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="39" />
+      <NameCon UId="60" Name="BaseSpeedValue" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="40" />
+      <NameCon UId="60" Name="HardwareId" />
+    </Wire>
+    <Wire UId="83">
+      <NameCon UId="60" Name="AxisEnabled" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="84">
+      <NameCon UId="60" Name="AxisPosOk" />
+      <IdentCon UId="42" />
+    </Wire>
+    <Wire UId="85">
+      <NameCon UId="60" Name="AxisSpFixed" />
+      <IdentCon UId="43" />
+    </Wire>
+    <Wire UId="86">
+      <NameCon UId="60" Name="AxisAckSetpoint" />
+      <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="87">
+      <NameCon UId="60" Name="ClampTorqueReached" />
+      <IdentCon UId="45" />
+    </Wire>
+    <Wire UId="88">
+      <NameCon UId="60" Name="AxisRef" />
+      <IdentCon UId="46" />
+    </Wire>
+    <Wire UId="89">
+      <NameCon UId="60" Name="AxisWarn" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="90">
+      <NameCon UId="60" Name="AxisError" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="91">
+      <NameCon UId="60" Name="Lockout" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="60" Name="ActVelocity" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="93">
+      <NameCon UId="60" Name="ActPosition" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="94">
+      <NameCon UId="60" Name="ActMode" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="60" Name="EPosZSW1" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="96">
+      <NameCon UId="60" Name="EPosZSW2" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="97">
+      <NameCon UId="60" Name="ActWarn" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="98">
+      <NameCon UId="60" Name="ActFault" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="99">
+      <NameCon UId="60" Name="Error" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="100">
+      <NameCon UId="60" Name="Status" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="101">
+      <NameCon UId="60" Name="DiagID" />
+      <IdentCon UId="59" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Convert Setposition from mm TO 1000_Unit</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <Access Scope="GlobalVariable" UId="26">
+    <Symbol UId="27">
+      <Component Name="DB_CMMT_ST" UId="28">
+        <BooleanAttribute Name="HasQuotes" UId="29">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="30" />
+      <Component Name="PLC -&gt; CMMT" UId="31" />
+      <Token Text="." UId="32" />
+      <Component Name="Position" UId="33" />
+    </Symbol>
+  </Access>
+  <Blank Num="3" UId="34" />
+  <Token Text=":=" UId="35" />
+  <Blank UId="36" />
+  <Access Scope="Call" UId="37">
+    <Instruction Name="REAL_TO_DINT" UId="38">
+      <Token Text="(" UId="39" />
+      <NamelessParameter UId="40">
+        <Access Scope="GlobalVariable" UId="41">
+          <Symbol UId="42">
+            <Component Name="DB_CMMT_ST" UId="43">
+              <BooleanAttribute Name="HasQuotes" UId="44">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="45" />
+            <Component Name="SetPosition_mm" UId="46" />
+          </Symbol>
+        </Access>
+        <Blank UId="47" />
+        <Token Text="*" UId="48" />
+        <Blank UId="49" />
+        <Access Scope="LiteralConstant" UId="50">
+          <Constant UId="51">
+            <ConstantValue UId="53">1000.0</ConstantValue>
+          </Constant>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="55" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="56" />
+  <NewLine UId="57" />
+  <Blank Num="4" UId="58" />
+  <Access Scope="GlobalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="DB_CMMT_ST" UId="61">
+        <BooleanAttribute Name="HasQuotes" UId="62">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="63" />
+      <Component Name="HMI" UId="64" />
+      <Token Text="." UId="65" />
+      <Component Name="Scaled_SetpointPosition" UId="66" />
+    </Symbol>
+  </Access>
+  <Blank UId="67" />
+  <Token Text=":=" UId="68" />
+  <Blank UId="69" />
+  <Access Scope="GlobalVariable" UId="70">
+    <Symbol UId="71">
+      <Component Name="DB_CMMT_ST" UId="72">
+        <BooleanAttribute Name="HasQuotes" UId="73">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="74" />
+      <Component Name="SetPosition_mm" UId="75" />
+    </Symbol>
+  </Access>
+  <Blank UId="76" />
+  <Token Text="/" UId="77" />
+  <Blank UId="78" />
+  <Access Scope="LiteralConstant" UId="79">
+    <Constant UId="80">
+      <ConstantValue UId="82">100.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="83" />
+  <NewLine UId="84" />
+  <Token Text="END_REGION" UId="85" />
+  <NewLine Num="2" UId="86" />
+  <Token Text="REGION" UId="87" />
+  <Blank UId="88" />
+  <Text UId="89">Convert Setvelocity </Text>
+  <NewLine UId="90" />
+  <Blank Num="4" UId="91" />
+  <Access Scope="GlobalVariable" UId="92">
+    <Symbol UId="93">
+      <Component Name="DB_CMMT_ST" UId="94">
+        <BooleanAttribute Name="HasQuotes" UId="95">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="96" />
+      <Component Name="PLC -&gt; CMMT" UId="97" />
+      <Token Text="." UId="98" />
+      <Component Name="Velocity" UId="99" />
+    </Symbol>
+  </Access>
+  <Blank UId="100" />
+  <Token Text=":=" UId="101" />
+  <Blank UId="102" />
+  <Access Scope="Call" UId="103">
+    <Instruction Name="REAL_TO_DINT" UId="104">
+      <Token Text="(" UId="105" />
+      <NamelessParameter UId="106">
+        <Access Scope="GlobalVariable" UId="107">
+          <Symbol UId="108">
+            <Component Name="DB_CMMT_ST" UId="109">
+              <BooleanAttribute Name="HasQuotes" UId="110">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="111" />
+            <Component Name="SetVelocity_mm_s" UId="112" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="114" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="115" />
+  <NewLine UId="116" />
+  <Token Text="END_REGION" UId="117" />
+  <NewLine Num="2" UId="118" />
+  <Token Text="REGION" UId="119" />
+  <Blank UId="120" />
+  <Text UId="121">Convert Actual Position from 1000Unit to mm</Text>
+  <NewLine UId="122" />
+  <Blank Num="4" UId="123" />
+  <Access Scope="GlobalVariable" UId="124">
+    <Symbol UId="125">
+      <Component Name="DB_CMMT_ST" UId="126">
+        <BooleanAttribute Name="HasQuotes" UId="127">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="128" />
+      <Component Name="ActualPos_mm" UId="129" />
+    </Symbol>
+  </Access>
+  <Blank UId="130" />
+  <Token Text=":=" UId="131" />
+  <Blank UId="132" />
+  <Access Scope="GlobalVariable" UId="133">
+    <Symbol UId="134">
+      <Component Name="DB_CMMT_ST" UId="135">
+        <BooleanAttribute Name="HasQuotes" UId="136">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="137" />
+      <Component Name="CMMT -&gt; PLC" UId="138" />
+      <Token Text="." UId="139" />
+      <Component Name="ActPosition" UId="140" />
+    </Symbol>
+  </Access>
+  <Blank UId="141" />
+  <Token Text="/" UId="142" />
+  <Blank UId="143" />
+  <Access Scope="LiteralConstant" UId="144">
+    <Constant UId="145">
+      <ConstantValue UId="147">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="148" />
+  <NewLine UId="149" />
+  <Blank Num="4" UId="150" />
+  <LineComment UId="151">
+    <Text UId="152"> Scale actual position for HMI</Text>
+  </LineComment>
+  <NewLine UId="153" />
+  <Blank Num="4" UId="154" />
+  <Access Scope="GlobalVariable" UId="155">
+    <Symbol UId="156">
+      <Component Name="DB_CMMT_ST" UId="157">
+        <BooleanAttribute Name="HasQuotes" UId="158">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="159" />
+      <Component Name="HMI" UId="160" />
+      <Token Text="." UId="161" />
+      <Component Name="Scaled_ActualPos" UId="162" />
+    </Symbol>
+  </Access>
+  <Blank UId="163" />
+  <Token Text=":=" UId="164" />
+  <Blank UId="165" />
+  <Access Scope="GlobalVariable" UId="166">
+    <Symbol UId="167">
+      <Component Name="DB_CMMT_ST" UId="168">
+        <BooleanAttribute Name="HasQuotes" UId="169">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="170" />
+      <Component Name="ActualPos_mm" UId="171" />
+    </Symbol>
+  </Access>
+  <Blank UId="172" />
+  <Token Text="/" UId="173" />
+  <Blank UId="174" />
+  <Access Scope="LiteralConstant" UId="175">
+    <Constant UId="176">
+      <ConstantValue UId="178">100</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="179" />
+  <Blank UId="180" />
+  <LineComment UId="181">
+    <Text UId="182"> Value in cm</Text>
+  </LineComment>
+  <NewLine UId="183" />
+  <Token Text="END_REGION" UId="184" />
+  <NewLine Num="2" UId="185" />
+  <Token Text="REGION" UId="186" />
+  <Blank UId="187" />
+  <Text UId="188">Convert Actual velocity from 1000Unit TO mm/s</Text>
+  <NewLine UId="189" />
+  <Blank Num="4" UId="190" />
+  <Access Scope="GlobalVariable" UId="191">
+    <Symbol UId="192">
+      <Component Name="DB_CMMT_ST" UId="193">
+        <BooleanAttribute Name="HasQuotes" UId="194">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="195" />
+      <Component Name="AcutalVelocity_mm_s" UId="196" />
+    </Symbol>
+  </Access>
+  <Blank UId="197" />
+  <Token Text=":=" UId="198" />
+  <Blank UId="199" />
+  <Access Scope="GlobalVariable" UId="200">
+    <Symbol UId="201">
+      <Component Name="DB_CMMT_ST" UId="202">
+        <BooleanAttribute Name="HasQuotes" UId="203">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="204" />
+      <Component Name="CMMT -&gt; PLC" UId="205" />
+      <Token Text="." UId="206" />
+      <Component Name="ActVelocity" UId="207" />
+    </Symbol>
+  </Access>
+  <Blank UId="208" />
+  <Token Text="*" UId="209" />
+  <Blank UId="210" />
+  <Access Scope="LiteralConstant" UId="211">
+    <Constant UId="212">
+      <ConstantValue UId="214">1000.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="215" />
+  <NewLine UId="216" />
+  <Token Text="END_REGION" UId="217" />
+  <NewLine Num="2" UId="218" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Convert Veolocity and Position in mm/s and mm</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="ExecuteMode" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="IntermediateStop" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="Error" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="AxisError" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="PLC -&gt; CMMT" />
+        <Component Name="EnableAxis" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="26" />
+    <Part Name="SCoil" UId="27" />
+    <Part Name="Contact" UId="28" />
+    <Part Name="Contact" UId="29" />
+    <Part Name="O" UId="30">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="RCoil" UId="31" />
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <Powerrail />
+      <NameCon UId="26" Name="in" />
+      <NameCon UId="28" Name="in" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="30" Name="in1" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="in" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CLAMPING_TORQUE" />
+        <Component Name="Execute" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CLAMPING_TORQUE" />
+        <Component Name="LinearRotative" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CLAMPING_TORQUE" />
+        <Component Name="ClampingTorque" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="CMMT-ST~DO_SERVO_1~Module_Access_Point" />
+    </Access>
+    <Call UId="25">
+      <CallInfo Name="Festo_ClampingTorque" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="26">
+          <Component Name="Festo_ClampingTorque_DB" />
+        </Instance>
+        <Parameter Name="Execute" Section="Input" Type="Bool" />
+        <Parameter Name="LinearRotative" Section="Input" Type="Bool" />
+        <Parameter Name="ClampingTorque" Section="Input" Type="Real" />
+        <Parameter Name="PercentForce" Section="Input" Type="USInt" />
+        <Parameter Name="MAP_HardwareId" Section="Input" Type="HW_IO" />
+        <Parameter Name="Done" Section="Output" Type="Bool" />
+        <Parameter Name="Busy" Section="Output" Type="Bool" />
+        <Parameter Name="Error" Section="Output" Type="Bool" />
+        <Parameter Name="ErrorId" Section="Output" Type="DWord" />
+        <Parameter Name="ErrorString" Section="Output" Type="String[50]" />
+        <Parameter Name="ActClampingTorque" Section="Output" Type="Real" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="34">
+      <Powerrail />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="Execute" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="22" />
+      <NameCon UId="25" Name="LinearRotative" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="ClampingTorque" />
+    </Wire>
+    <Wire UId="38">
+      <OpenCon UId="27" />
+      <NameCon UId="25" Name="PercentForce" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="24" />
+      <NameCon UId="25" Name="MAP_HardwareId" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="25" Name="Done" />
+      <OpenCon UId="28" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="25" Name="Busy" />
+      <OpenCon UId="29" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="25" Name="Error" />
+      <OpenCon UId="30" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="25" Name="ErrorId" />
+      <OpenCon UId="31" />
+    </Wire>
+    <Wire UId="44">
+      <NameCon UId="25" Name="ErrorString" />
+      <OpenCon UId="32" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="25" Name="ActClampingTorque" />
+      <OpenCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Festo Calmping Torque</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActFault" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT -&gt; PLC" />
+        <Component Name="ActWarn" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="DB_CMMT_ST" />
+        <Component Name="CMMT_ST_ErrorWarningMessage" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="Festo_Messages_Drives_EN" BlockType="FC">
+        <Parameter Name="ActFault_Drive" Section="Input" Type="Word" />
+        <Parameter Name="ActWarning_Drive" Section="Input" Type="Word" />
+        <Parameter Name="strMessage" Section="Output" Type="String" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="ActFault_Drive" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="ActWarning_Drive" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="strMessage" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="21" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="22" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
